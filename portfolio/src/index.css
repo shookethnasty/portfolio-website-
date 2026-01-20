@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* hidden state when not visible */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+/* replayable animation */
+.animate-reveal {
+  animation: reveal 0.6s ease forwards;
+  will-change: transform, opacity;
+}
