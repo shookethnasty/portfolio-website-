@@ -1,16 +1,71 @@
-# React + Vite
+# Harshit Chordiya — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio showcasing my work, skills, and experience as a **Software Engineer** with a focus on **Full-Stack Development** and **Cloud Engineering**.
 
-Currently, two official plugins are available:
+Built with performance, clarity, and maintainability in mind.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Clean, minimal UI with subtle animations
+- Smooth scroll navigation with active section tracking
+- Fully responsive across devices
+- Modular, reusable React components
+- Dark theme with ambient visual effects
+- Project-focused layout tailored for recruiters
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+**Frontend**
+- React (Vite)
+- JavaScript (ES6+)
+- Tailwind CSS
+
+**UI & UX**
+- Responsive design
+- Scroll-based animations
+- React Icons
+
+**Tooling & Deployment**
+- Vite
+- Git & GitHub
+- Vercel (planned deployment)
+
+---
+
+## 📂 Sections
+
+- **About** — Short professional summary
+- **Skills** — Technical skillset overview
+- **Experience** — Professional and internship experience
+- **Projects** — Selected academic and personal projects
+- **Contact** — Direct email contact
+
+---
+
+## 🚀 Projects Highlighted
+
+- **TidyLens – Mixed Reality Inventory Tracking System**  
+  Mixed Reality application for Meta Quest 3 with real-time object detection and backend data pipelines.
+
+- **Climate Data Analyser**  
+  Data-driven web application for exploring over 260 years of Australian climate and population data.
+
+- **Auto Job Application Tracker**  
+  Automation pipeline for large-scale job tracking using Python, cloud services, and APIs.
+
+- **Customisable Maze Builder for Minecraft**  
+  Systems-level project implementing procedural generation using C++ and Assembly.
+
+---
+
+## 📦 Getting Started (Local Setup)
+
+Clone the repository:
+
+```bash
+git clone https://github.com/shookethnasty/portfolio.git
+cd portfolio
