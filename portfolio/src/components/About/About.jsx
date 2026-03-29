@@ -66,8 +66,8 @@ const About = () => {
           {/* Buttons */}
           <div className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
             <a
-              href="/Harshit-Chordiya-Resume.pdf"
-              download="Harshit-Chordiya-Resume.pdf"
+              href="/harshitChordiya_resume.pdf"
+              download="harshitChordiya_resume.pdf"
               className="inline-flex items-center justify-center text-white py-3 px-8 rounded-full text-base font-semibold transition duration-300 transform hover:scale-105"
               style={{
                 background: "linear-gradient(90deg, #8245ec, #a855f7)",
@@ -78,7 +78,7 @@ const About = () => {
             </a>
 
             <a
-              href="/Harshit-Chordiya-Resume.pdf"
+              href="/harshitChordiya_resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center text-white py-3 px-8 rounded-full text-base font-semibold transition duration-300 transform hover:scale-105 border border-[#8245ec]/60 hover:border-[#8245ec]"
