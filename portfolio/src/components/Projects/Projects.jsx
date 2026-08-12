@@ -3,6 +3,22 @@ import Reveal from "../Reveal";
 
 const PROJECTS = [
   {
+    title: "Purchase Order Scorecard — LLM & OCR Underwriting Dashboard",
+    description:
+      "An underwriting dashboard for purchase order financing, built to turn variably formatted lending documents into decision-ready data. Combined OCR-assisted extraction with LLM-based processing to standardise fields across inconsistent financial statements, then automated borrower risk analysis and lender matching to cut manual review time. Data pipelines in Pandas cleaned, validated, and aggregated purchase order and invoice datasets, with assumptions and edge cases documented for maintainability. Deployed to AWS EC2 with GitHub Actions CI/CD.",
+    tech: [
+      "Python",
+      "Dash",
+      "Flask",
+      "OpenAI API",
+      "OCR",
+      "Pandas",
+      "Plotly",
+      "AWS EC2",
+      "CI/CD",
+    ],
+  },
+  {
     title: "TidyLens — Mixed Reality Inventory Tracking System",
     description:
       "Built a Mixed Reality application for Meta Quest 3 with real-time object detection and database persistence. Engineered an end-to-end pipeline from Unity to a Flask backend with YOLOv5 integration, storing 1000+ detection records with 6DOF headset pose data in MySQL. Deployed wirelessly to a Node 30 server, optimized performance by fixing memory leaks (≈90% lag reduction), and implemented RESTful APIs for real-time image processing and spatial data tracking.",
@@ -20,17 +36,32 @@ const PROJECTS = [
     // links: [{ label: "GitHub", href: "https://..." }],
   },
   {
-    title: "Climate Data Analyser",
+    title: "Auto Job Application Tracker",
     description:
-      "A data-driven web application that enables users to explore and filter over 260 years of Australian climate and population data. Built on a relational database to support fast queries across large historical datasets and surfaced insights through a clean, minimal interface designed to improve research efficiency and usability.",
-    tech: ["Java", "HTML", "CSS", "MySQL", "SQLite"],
+      "Engineered an automation pipeline using Python, Cron, and web scraping to process large-scale job data, with GenAI APIs used to parse and classify unstructured listings. Implemented database workflows in DynamoDB and built secure APIs for data retrieval. Added monitoring logs and alert triggers to improve production reliability and observability.",
+    tech: ["Python", "Flask", "DynamoDB", "AWS EC2", "Cron", "Web Scraping", "GenAI APIs"],
     // links: [{ label: "GitHub", href: "https://..." }],
   },
   {
-    title: "Auto Job Application Tracker",
+    title: "CLYMB — Marketing Website",
     description:
-      "Engineered an automation pipeline using Python, Cron, and web scraping to process large-scale job data. Implemented database workflows in DynamoDB and built secure APIs for data retrieval. Added monitoring logs and alert triggers to improve production reliability and observability.",
-    tech: ["Python", "Flask", "DynamoDB", "AWS EC2", "Cron", "Web Scraping", "GenAI APIs"],
+      "A freelance build for a live commercial site: an optimised React frontend with API integrations, motion-driven interactions, and CI-based deployments.",
+    tech: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "GSAP",
+      "Lenis",
+      "React Router",
+      "CI/CD",
+    ],
+    links: [{ label: "Live Site", href: "https://www.clymb.au/" }],
+  },
+  {
+    title: "Climate Data Analyser",
+    description:
+      "A data-driven web application that enables users to explore and filter over 260 years of Australian climate and population data. Designed ETL modules to clean, transform, and query large historical datasets, wrote SQL procedures and optimisation scripts to speed up analytical queries, and surfaced insights through a clean, minimal interface designed to improve research efficiency.",
+    tech: ["Java", "Spring Boot", "HTML", "CSS", "MySQL", "SQLite"],
     // links: [{ label: "GitHub", href: "https://..." }],
   },
   {
@@ -49,7 +80,8 @@ const Projects = () => {
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-white">Projects</h2>
         <p className="mt-3 text-gray-400 max-w-2xl mx-auto">
-          A selection of projects showcasing full-stack development, cloud automation, and systems work.
+          A selection of work across AI and LLM pipelines, cloud automation, full-stack development,
+          and systems programming.
         </p>
       </div>
 

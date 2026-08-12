@@ -9,7 +9,7 @@ const About = () => {
       id="about"
       className="px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans pt-10 md:pt-14 lg:pt-16"
     >
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-12 md:gap-16">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start gap-12 md:gap-16">
         {/* LEFT SIDE */}
         <div className="md:w-1/2 max-w-xl text-center md:text-left">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
@@ -17,19 +17,19 @@ const About = () => {
           </h1>
 
           <h2 className="mt-4 text-lg sm:text-xl md:text-2xl text-gray-300">
-            Software Engineer · Full-Stack · Problem Solver
+            AI Engineer · Agentic Systems · AWS
           </h2>
 
           {/* Subtle typewriter (less dominant) */}
           <p className="mt-5 text-sm sm:text-base text-gray-400">
-            Interests:&nbsp;
+            Working on:&nbsp;
             <span className="text-[#8245ec] font-semibold">
               <Typewriter
                 words={[
-                  "Cloud Engineering",
-                  "Full-Stack Development",
-                  "Data Pipelines",
-                  "Scalable Software",
+                  "Agentic AI Systems",
+                  "RAG & Retrieval",
+                  "LLM Evaluation",
+                  "AWS Architecture",
                 ]}
                 loop={0}
                 cursor
@@ -44,22 +44,26 @@ const About = () => {
           {/* Your bio (exact text, formatted nicely) */}
           <div className="mt-10 space-y-5 text-base sm:text-lg text-gray-400 leading-relaxed">
             <p>
-              I’m a Computer Science graduate with a focus on cloud engineering and full-stack
-              development. I enjoy working across the stack — from designing clean, intuitive user
-              interfaces to building reliable backend services, APIs, and data pipelines that support
-              real-world applications.
+              I build AI agents and the systems around them. I’m engaged as a full-time contractor at
+              Bosley, an Australian consulting firm delivering digital transformation and AI work for
+              commercial and government clients. Most of my time goes into designing agentic systems —
+              working out where an LLM genuinely helps, wiring it to the right tools and data, then
+              testing it until it either holds up or clearly doesn’t.
             </p>
 
             <p>
-              I’ve worked as a Software Engineer Intern and Freelance Full-Stack Developer,
-              contributing to projects involving cloud deployment, databases, and AI-assisted data
-              processing. I value clarity, structure, and thoughtful problem-solving, and I’m
-              motivated by building software that is practical, scalable, and easy to maintain.
+              Recently that meant three AI agents and an AI-enabled client portal for a not-for-profit
+              client, covering knowledge retrieval, guided assistance, and workflow automation. The
+              hard part was never the demo. It’s the stretch afterwards — finding the places where an
+              agent is confidently wrong, and closing that gap until real users can rely on it.
             </p>
 
             <p>
-              Outside of work, I stay active through regular training and swimming, and I value
-              discipline, consistency, and long-term growth.
+              More of my work now sits on AWS: Bedrock and SageMaker for inference, Lambda and API
+              Gateway for compute, Step Functions for orchestration, OpenSearch and pgvector for
+              retrieval. That’s where architecture stops being abstract. Where I’m headed is AI
+              solution architect — less “can we build this agent”, more how the whole system fits
+              together, what it runs on, and where it breaks at scale.
             </p>
           </div>
 

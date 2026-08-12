@@ -13,18 +13,18 @@ const Contact = () => {
       </h2>
 
       <p className="mt-4 text-gray-400 max-w-xl mx-auto">
-        If you’d like to discuss opportunities, projects, or collaborations,
-        feel free to reach out.
+        Happy to talk with anyone running agentic systems in production — not demos, the messy
+        version. Also open to conversations about roles, projects, and collaborations.
       </p>
 
       {/* Email Card */}
       <div className="mt-10 inline-flex items-center gap-4 px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
         <FaEnvelope className="text-[#8245ec]" size={22} />
         <a
-          href="mailto:hchordiya@gmail.com"
+          href="mailto:hchordiya6@gmail.com"
           className="text-lg text-white hover:text-[#8245ec] transition"
         >
-          hchordiya@gmail.com
+          hchordiya6@gmail.com
         </a>
       </div>
     </section>

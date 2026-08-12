@@ -3,27 +3,63 @@ import Reveal from "../Reveal";
 
 const EXPERIENCE = [
   {
+    role: "AI Engineer (Contract)",
+    company: "Bosley · Melbourne, Australia",
+    date: "Apr 2026 – Present",
+    tags: [
+      "Agentic AI",
+      "Amazon Bedrock",
+      "AWS Lambda",
+      "Step Functions",
+      "RAG",
+      "Python",
+      "LLM Evaluation",
+    ],
+    points: [
+      "Engaged as a full-time contractor delivering AI automation and agentic systems for commercial and government clients",
+      "Designed and shipped three AI agents and an AI-enabled client portal for a not-for-profit client, spanning knowledge retrieval, guided assistance, and workflow automation",
+      "Owned prompt design, tool and data integrations, and the evaluation loop that moved agents from working demo to something real users could rely on",
+      "Architected delivery on AWS — Bedrock and SageMaker for inference, Lambda, ECS, and API Gateway for compute, Step Functions for orchestration, OpenSearch and Aurora pgvector for retrieval",
+      "Ran discovery on proposed AI use cases and recommended against the ones that would not survive production, before build effort was committed",
+    ],
+  },
+  {
     role: "Freelance Full-Stack Developer",
     company: "Self-Employed · Remote",
-    date: "Mar 2025 – Present",
-    tags: ["React", "Node.js", "REST APIs", "Databases", "Cloud Hosting", "CI/CD"],
+    date: "Mar 2025 – Apr 2026",
+    tags: ["React", "Node.js", "REST APIs", "PostgreSQL", "AWS", "CI/CD"],
     points: [
-      "Building end-to-end web applications from requirements to deployment",
-      "Developing responsive UIs, backend APIs, and database-driven features",
-      "Managing deployment workflows and basic CI/CD for production-ready delivery",
-      "Working directly with clients to iterate on features and solutions",
+      "Delivered end-to-end web applications from requirements through implementation and deployment",
+      "Built backend services and REST APIs using object-oriented design and structured data models",
+      "Developed responsive frontends in React, JavaScript, and Tailwind CSS",
+      "Deployed to AWS (EC2, S3) and managed environments and access using IAM",
+      "Worked directly with clients to refine requirements and iterate on feedback",
+    ],
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "Bridge Marketplace · New York, USA (Remote)",
+    date: "Dec 2024 – Mar 2025",
+    tags: ["Python", "Flask", "Dash", "Pandas", "OCR", "LLM APIs", "SQL"],
+    points: [
+      "Built AI-powered OCR and LLM pipelines that extracted structured data from variably formatted lending and financial documents, cutting manual processing and data-entry errors",
+      "Integrated LLM-based processing to interpret extracted financial data and structure it for downstream lender-matching workflows",
+      "Built a purchase order scorecard dashboard in Python, Flask, and Dash, surfacing key financial metrics from large Excel and CSV datasets",
+      "Developed data pipelines in Pandas and SQL to clean, validate, and aggregate transactional data for downstream systems",
+      "Owned feature delivery end to end in a remote Agile team and presented sprint demos to stakeholders",
     ],
   },
   {
     role: "Software Developer",
     company: "RISC Club at RMIT University · Melbourne, Australia",
     date: "Apr 2024 – Dec 2024",
-    tags: ["JavaScript", "Web Technologies", "Git", "Internal Platforms"],
+    tags: ["Python", "Node.js", "AWS Lambda", "Linux", "Git"],
     points: [
-      "Contributed to full-stack features for internal research and innovation platforms",
-      "Collaborated with stakeholders to translate requirements into working software components",
-      "Assisted with system integration and feature enhancements across research tools",
-      "Followed structured development practices including Git-based version control",
+      "Built full-stack features for internal research and innovation platforms",
+      "Wrote Python and Linux automation scripts to optimise server-side workloads and reduce manual support tasks",
+      "Migrated backend components to AWS Lambda and a serverless architecture, reducing operational overhead",
+      "Prepared technical specifications, deployment plans, and architecture documentation with an Agile team",
+      "Performed unit and system testing, and coordinated defect fixes across services",
     ],
   },
 ];
@@ -41,8 +77,8 @@ const Experience = () => {
             Experience
           </h2>
           <p className="mt-3 text-gray-400 max-w-2xl mx-auto">
-            Professional roles where I’ve applied my skills to real-world
-            software development and delivery.
+            Where I’ve shipped agentic AI, cloud, and full-stack work into real
+            environments with real users.
           </p>
         </div>
       </Reveal>
