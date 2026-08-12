@@ -3,24 +3,27 @@ import Reveal from "../Reveal";
 
 const EXPERIENCE = [
   {
-    role: "AI Engineer (Contract)",
+    role: "AI Automation & Software Engineering Contractor",
     company: "Bosley · Melbourne, Australia",
     date: "Apr 2026 – Present",
+    blurb:
+      "Bosley is an Australian technology and consulting company delivering digital transformation, automation, and AI-enabled business solutions across commercial and government client environments.",
     tags: [
       "Agentic AI",
-      "Amazon Bedrock",
-      "AWS Lambda",
-      "Step Functions",
+      "LLMs",
+      "Claude API",
+      "OpenAI API",
+      "Prompt Engineering",
       "RAG",
       "Python",
-      "LLM Evaluation",
+      "Workflow Automation",
     ],
     points: [
-      "Engaged as a full-time contractor delivering AI automation and agentic systems for commercial and government clients",
-      "Designed and shipped three AI agents and an AI-enabled client portal for a not-for-profit client, spanning knowledge retrieval, guided assistance, and workflow automation",
-      "Owned prompt design, tool and data integrations, and the evaluation loop that moved agents from working demo to something real users could rely on",
-      "Architected delivery on AWS — Bedrock and SageMaker for inference, Lambda, ECS, and API Gateway for compute, Step Functions for orchestration, OpenSearch and Aurora pgvector for retrieval",
-      "Ran discovery on proposed AI use cases and recommended against the ones that would not survive production, before build effort was committed",
+      "Engaged full-time to identify high-value automation and AI opportunities across client business units, then build the prototypes that prove or kill them before delivery commits to a direction",
+      "Designed and shipped agentic AI workflows combining LLMs (Claude, OpenAI), tool use, and enterprise knowledge sources to automate document-heavy processing and knowledge retrieval",
+      "Ran rapid experiments across prompts, models, and agent architectures — comparing approaches, measuring output accuracy and reliability, and discarding what did not hold up under real inputs",
+      "Worked directly with non-technical stakeholders to convert vague problem statements into scoped, testable solutions, and to set realistic expectations of what current AI can and cannot do reliably",
+      "Delivered inside government contract environments with requirements around secure workflows and traceability, capturing reusable patterns and handover documentation so proven approaches could be repeated rather than rebuilt",
     ],
   },
   {
@@ -40,26 +43,24 @@ const EXPERIENCE = [
     role: "Software Engineer Intern",
     company: "Bridge Marketplace · New York, USA (Remote)",
     date: "Dec 2024 – Mar 2025",
-    tags: ["Python", "Flask", "Dash", "Pandas", "OCR", "LLM APIs", "SQL"],
+    blurb:
+      "Bridge Marketplace is a fintech company which connects businesses with suitable lending partners.",
+    tags: ["Python", "Pandas", "OCR", "OpenAI API", "SQL", "Excel / CSV"],
     points: [
-      "Built AI-powered OCR and LLM pipelines that extracted structured data from variably formatted lending and financial documents, cutting manual processing and data-entry errors",
-      "Integrated LLM-based processing to interpret extracted financial data and structure it for downstream lender-matching workflows",
-      "Built a purchase order scorecard dashboard in Python, Flask, and Dash, surfacing key financial metrics from large Excel and CSV datasets",
-      "Developed data pipelines in Pandas and SQL to clean, validate, and aggregate transactional data for downstream systems",
-      "Owned feature delivery end to end in a remote Agile team and presented sprint demos to stakeholders",
+      "Built Python automation pipelines to ingest, validate, and transform financial data from Excel and CSV sources",
+      "Developed OCR-based workflows to extract structure from unstructured lending documents, then integrated OpenAI APIs to interpret and organise the extracted content into machine-readable outputs",
+      "Investigated and resolved pipeline failures against messy real-world inputs, improving data reliability and removing manual processing effort from the workflow",
     ],
   },
   {
     role: "Software Developer",
-    company: "RISC Club at RMIT University · Melbourne, Australia",
+    company: "RISC at RMIT University · Melbourne, Australia",
     date: "Apr 2024 – Dec 2024",
-    tags: ["Python", "Node.js", "AWS Lambda", "Linux", "Git"],
+    blurb:
+      "RISC is a student-led technical club at RMIT University focused on cybersecurity and hands-on projects.",
+    tags: ["REST APIs", "Debugging", "Git", "Agile"],
     points: [
-      "Built full-stack features for internal research and innovation platforms",
-      "Wrote Python and Linux automation scripts to optimise server-side workloads and reduce manual support tasks",
-      "Migrated backend components to AWS Lambda and a serverless architecture, reducing operational overhead",
-      "Prepared technical specifications, deployment plans, and architecture documentation with an Agile team",
-      "Performed unit and system testing, and coordinated defect fixes across services",
+      "Developed and maintained internal systems and tools within Agile teams, contributing API integrations, debugging, and performance improvements across iterative releases",
     ],
   },
 ];
@@ -99,7 +100,15 @@ const Experience = () => {
                 <span className="text-sm text-gray-400">{exp.date}</span>
               </div>
 
-              <p className="text-gray-400 mb-4">{exp.company}</p>
+              <p className="text-gray-400">{exp.company}</p>
+
+              {exp.blurb && (
+                <p className="mt-2 text-sm text-gray-500 italic max-w-3xl">
+                  {exp.blurb}
+                </p>
+              )}
+
+              <div className="mb-4" />
 
               {/* Tech Pills */}
               <div className="flex flex-wrap gap-2 mb-6">

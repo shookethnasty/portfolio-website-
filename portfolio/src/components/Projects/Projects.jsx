@@ -3,6 +3,36 @@ import Reveal from "../Reveal";
 
 const PROJECTS = [
   {
+    title: "AI Agents & Client Portal",
+    subtitle: "Professional project · not-for-profit client",
+    description:
+      "Designed and built three AI agents and an AI-enabled client portal supporting knowledge retrieval, guided assistance, and workflow automation. Owned prompt design, tool integration, and iterative evaluation of agent responses against real user queries, refining behaviour until output was consistent enough for end users.",
+    tech: [
+      "AI Agents",
+      "LLMs",
+      "Claude",
+      "OpenAI",
+      "Prompt Engineering",
+      "Tool Use",
+      "RAG",
+      "Workflow Automation",
+    ],
+  },
+  {
+    title: "Workday Implementation — AI & Automation Discovery",
+    subtitle: "Professional project · enterprise client",
+    description:
+      "Supporting an enterprise Workday implementation through current-state process mapping, workflow analysis, and identification of AI and automation opportunities — the discovery work that determines what is worth building before anything is built.",
+    tech: [
+      "Workday",
+      "Process Mapping",
+      "Workflow Analysis",
+      "AI Automation",
+      "Documentation",
+      "Stakeholder Support",
+    ],
+  },
+  {
     title: "Purchase Order Scorecard — LLM & OCR Underwriting Dashboard",
     description:
       "An underwriting dashboard for purchase order financing, built to turn variably formatted lending documents into decision-ready data. Combined OCR-assisted extraction with LLM-based processing to standardise fields across inconsistent financial statements, then automated borrower risk analysis and lender matching to cut manual review time. Data pipelines in Pandas cleaned, validated, and aggregated purchase order and invoice datasets, with assumptions and edge cases documented for maintainability. Deployed to AWS EC2 with GitHub Actions CI/CD.",
@@ -97,7 +127,7 @@ const Projects = () => {
   );
 };
 
-function ProjectCard({ title, description, tech, links }) {
+function ProjectCard({ title, subtitle, description, tech, links }) {
   const hasLinks = Array.isArray(links) && links.length > 0;
 
   return (
@@ -108,6 +138,13 @@ function ProjectCard({ title, description, tech, links }) {
 
       <div className="relative">
         <h3 className="text-2xl sm:text-3xl font-semibold text-white">{title}</h3>
+
+        {subtitle && (
+          <p className="mt-2 text-sm uppercase tracking-wide text-[#8245ec]/90">
+            {subtitle}
+          </p>
+        )}
+
         <p className="mt-4 text-gray-300 leading-relaxed max-w-4xl">{description}</p>
 
         {/* Tech pills */}

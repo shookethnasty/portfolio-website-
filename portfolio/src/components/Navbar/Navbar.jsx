@@ -12,7 +12,14 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      const sections = ["about", "skills", "experience", "projects", "contact"];
+      const sections = [
+        "about",
+        "skills",
+        "experience",
+        "projects",
+        "education",
+        "contact",
+      ];
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = document.getElementById(sections[i]);
         if (section && window.scrollY >= section.offsetTop - 120) {
@@ -41,6 +48,7 @@ const Navbar = () => {
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
+    { id: "education", label: "Education" },
     { id: "contact", label: "Contact" },
   ];
 
